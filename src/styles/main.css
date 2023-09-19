@@ -8,10 +8,23 @@ body {
 .error {
   color: red;
   z-index: 1;
-  background-color: #88c1ad;
+  background-color: #6ea37d;
   border-radius: 5px;
   font-weight: 700;
   font-size: 18px;
+  top: 322px;
+  position: absolute;
+}
+
+.error-pass {
+  color: red;
+  z-index: 1;
+  background-color: #6ea37d;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  top: 388px;
+  position: absolute;
 }
 
 .container {
