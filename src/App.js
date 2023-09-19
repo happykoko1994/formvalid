@@ -77,10 +77,10 @@ function App() {
         {!emptyLog ? minLength : <div className='error'></div>}
         {!minLength ? incorEmail : <div className='error'></div>}
 
-        <input onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)} value={email.value} name='email' type="text" />
+        <input placeholder='Enter email' onChange={e => email.onChange(e)} onBlur={e => email.onBlur(e)} value={email.value} name='email' type="text" />
         {(password.isDirty && password.isEmpty) && <div className='error-pass'>Password is Empty</div>}
         {!emptyPass ? lowPass : <div className='error-pass'></div>}
-        <input onChange={e => password.onChange(e)} onBlur={e => password.onBlur(e)} value={password.value} name='password' type="password" />
+        <input placeholder='Enter password' onChange={e => password.onChange(e)} onBlur={e => password.onBlur(e)} value={password.value} name='password' type="password" />
         <button disabled={!formValid}>Sign in</button>
       </div>
 
