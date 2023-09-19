@@ -3,10 +3,15 @@ import Component from './component';
 import { useState } from 'react';
 function App() {
   return (
-    <div>
-      <input type="text" />
-      <input type="password" />
-      <button>Registration</button>
+    
+    <div className="container">
+
+      <div className='form'><h1>Регистрация</h1>
+        <input type="text" />
+        <input type="password" />
+        <button >Sign up</button>
+        </div>
+      
     </div>
   );
 }

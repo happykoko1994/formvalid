@@ -1,1 +1,27 @@
-/*# sourceMappingURL=main.css.map */
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container .form {
+  max-width: 1200px;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.7);
+  padding: 0 20px 20px;
+}
+.container .form h1 {
+  text-align: center;
+  padding: 20px 40px;
+}
+.container .form input {
+  width: 300px;
+  margin-bottom: 20px;
+}
+.container .form button {
+  width: 100px;
+  height: 30px;
+}/*# sourceMappingURL=main.css.map */
