@@ -7,8 +7,8 @@ function App() {
   const [password, setPassword] = useState('');
   const [emailDirty, setEmailDirty] = useState(false);
   const [passwordDirty, setPasswordDirty] = useState(false);
-  const [emailError, setEmailError] = useState('Email can be empty')
-  const [passwordError, setPasswordError] = useState('Password can be empty')
+  const [emailError, setEmailError] = useState('Email cant be empty')
+  const [passwordError, setPasswordError] = useState('Password cant be empty')
   const [formValid, setFormValid] = useState(false)
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function App() {
     if (!re.test(String(e.target.value).toLocaleLowerCase())) {
       setEmailError('Incorrect email')
       if (!e.target.value) {
-        setEmailError('Email can be empty')
+        setEmailError('Email cant be empty')
       }
     } else {
       setEmailError('')
@@ -49,7 +49,7 @@ function App() {
     if (e.target.value.length < 3) {
       setPasswordError('Password must be more than 3s')
       if (!e.target.value) {
-        setPasswordError('Password can be empty')
+        setPasswordError('Password cant be empty')
       }
     } else {
       setPasswordError('')
